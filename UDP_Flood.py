@@ -8,7 +8,7 @@ SVR_PORT = 44444            #porta_client
 s = socket.socket(socket.AF_INET , socket.SOCK_DGRAM) #nuovo_socket_con_parametri_per_IPv4_e_connessione_UDP
 s.bind((SRV_ADDR , SRV_PORT)) #associazione_bind_indirizzo_e_porta_server
 s.listen(1) #configurazione_socket_per_ascolto_IP:PORTA_indicati_e_numero_massimo_di_connessioni_in_coda
-print ('Server started! Waiting for connection...')
+print ("Server started! Waiting for connection ...")
 connection , address = s.accept() #metodo_accept_per_accettare_e_stabilre_connessione_con_il_client_restituendo_identificativo_connessione_e_IP_client
 print ('Client connected with address: ' , address)
 while 1: #scambio_dati_con_ciclo_while_infinito
